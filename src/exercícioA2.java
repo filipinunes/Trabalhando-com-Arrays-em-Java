@@ -1,30 +1,21 @@
 import javax.swing.JOptionPane;
-public class exercícioA2 {
+public class exercÃ­cioA2 {
 
 	public static void main(String[] args) {
 		/*
-		 * Escreva um programa que permita armazenar e manipular uma coleção de numeros
+		 * Escreva um programa que permita armazenar e manipular uma coleÃ§Ã£o de numeros
 		 * inteiros de 20 elementos. Inicialmente o programa vai pedir ao usuario,
-		 * insira os numeros da coleção. Em seguida, o programa deve mostrar o seguinte
-		 * menu MENU
-		 * 
-		 * 1 Mostrar 
-		 * 2 Inverter 
-		 * 3 Ordenar crescente 
-		 * 4 Ordenar decrescente 
-		 * 5 fatorialmenor 
-		 * 6 Posição do maior 
-		 * 7 Qtde de primos 
-		 * 9 Vazar
-		 * Se opção 1 for selecionada, o programa mostra a coleção na situação em que se encontra e apresenta o menu; 
-		 * Se a opção 2 for selecionada, o programa inverte a ordem dos elementos, de tal forma que o primeiro passa a ser o ultimo, e assim sucessivamente e reapresenta o menu; 
-		 * se a opção 3 for selecionada, o programa ordena a coleção em ordem crescente e reapresenta o menu;
-		 * se a opção 4 for selecionada, o programa ordena a coleção em ordem decrescente e reapresenta o menu;
-		 * se a opção 5 for selecionada , o programa calcula e mostra o FATORIAL DO menor elemento da coleção e reapresenta o menu;
-		 * se a opção 6 for selecionada, o programa diz em que posição do vetor está o maior elemento e reapresenta o menu;
-		 * se a opção 7 for selecionada, o programa diz quantos primos existem na coleção e reapresenta o menu;
-		 * se a opção 9 for selecionada, o programa encerra;
-		 * observação: o programa só pode declarar e usar um único array
+		 * insira os numeros da coleÃ§Ã£o. Em seguida, o programa deve mostrar o seguinte
+		 * MENU
+		 * Se opÃ§Ã£o 1 for selecionada, o programa mostra a coleÃ§Ã£o na situaÃ§Ã£o em que se encontra e apresenta o menu; 
+		 * Se a opÃ§Ã£o 2 for selecionada, o programa inverte a ordem dos elementos, de tal forma que o primeiro passa a ser o ultimo, e assim sucessivamente e reapresenta o menu; 
+		 * se a opÃ§Ã£o 3 for selecionada, o programa ordena a coleÃ§Ã£o em ordem crescente e reapresenta o menu;
+		 * se a opÃ§Ã£o 4 for selecionada, o programa ordena a coleÃ§Ã£o em ordem decrescente e reapresenta o menu;
+		 * se a opÃ§Ã£o 5 for selecionada , o programa calcula e mostra o FATORIAL DO menor elemento da coleÃ§Ã£o e reapresenta o menu;
+		 * se a opÃ§Ã£o 6 for selecionada, o programa diz em que posiÃ§Ã£o do vetor estÃ¡ o maior elemento e reapresenta o menu;
+		 * se a opÃ§Ã£o 7 for selecionada, o programa diz quantos primos existem na coleÃ§Ã£o e reapresenta o menu;
+		 * se a opÃ§Ã£o 9 for selecionada, o programa encerra;
+		 * observaÃ§Ã£o: o programa sÃ³ pode declarar e usar um Ãºnico array
 		 */
 
 		int[] collection = new int[20];
@@ -34,27 +25,27 @@ public class exercícioA2 {
 
 		// Popula o array colection
 		for (int i = 0; i < range; i++) {
-			input = JOptionPane.showInputDialog("Digite os números da coleção.");
+			input = JOptionPane.showInputDialog("Digite os nÃºmeros da coleÃ§Ã£o.");
 			collection[i] = Integer.parseInt(input);
 		}
 
-		// Mostra um menu até que o usuário decida parar o programa
+		// Mostra um menu atÃ© que o usuÃ¡rio decida parar o programa
 		do {
 			input = JOptionPane.showInputDialog(
-					"Escolha uma ação:" 
-							+ "\n1: Mostrar a coleção." 
-							+ "\n2: Inverter a ordem da coleção." 
-							+ "\n3: Organizar a coleção em ordem Crescente."
-							+ "\n4: Organizar a coleção em ordem Decrescente." 
-							+ "\n5: Fatorial do menor número da coleção."
-							+ "\n6: Mostrar a posição do maior número da coleção."
-							+ "\n7: Mostrar quantos numeros primos existem na coleção." 
+					"Escolha uma aÃ§Ã£o:" 
+							+ "\n1: Mostrar a coleÃ§Ã£o." 
+							+ "\n2: Inverter a ordem da coleÃ§Ã£o." 
+							+ "\n3: Organizar a coleÃ§Ã£o em ordem Crescente."
+							+ "\n4: Organizar a coleÃ§Ã£o em ordem Decrescente." 
+							+ "\n5: Fatorial do menor nÃºmero da coleÃ§Ã£o."
+							+ "\n6: Mostrar a posiÃ§Ã£o do maior nÃºmero da coleÃ§Ã£o."
+							+ "\n7: Mostrar quantos numeros primos existem na coleÃ§Ã£o." 
 							+ "\n9: Encerrar");
 
 			option = Integer.parseInt(input);
 
 			switch (option) {
-			case 1:// Imprime situação atual do array
+			case 1:// Imprime situaÃ§Ã£o atual do array
 				System.out.println("-------------------------------------------------------");
 				for (int i = 0; i < range; i++) {
 					System.out.print(collection[i] + " ");
@@ -64,16 +55,16 @@ public class exercícioA2 {
 				}
 				System.out.println("-------------------------------------------------------");
 				break;
-			case 2:// Inverte as posições do Array
+			case 2:// Inverte as posiÃ§Ãµes do Array
 
-				// Determina o valor onde o laço deve parar
+				// Determina o valor onde o laÃ§o deve parar
 				int invertRange;
 				if (range % 2 == 0) {
 					invertRange = range / 2;
 				} else {
 					invertRange = (range - 1) / 2;
 				}
-				// Inverte as posições do Array
+				// Inverte as posiÃ§Ãµes do Array
 				for (int i = 0; i < (invertRange); i++) {
 					int aux = collection[i];
 					collection[i] = collection[collection.length - 1 - i];
@@ -116,7 +107,7 @@ public class exercícioA2 {
 					}
 				}
 				break;
-			case 5: // Determina o menor número do array e mostra seu fatorial
+			case 5: // Determina o menor nÃºmero do array e mostra seu fatorial
 				int fatSmaller = 1;
 				int smaller = 0;
 				for (int i = 0; i < range; i++) {
@@ -131,11 +122,11 @@ public class exercícioA2 {
 					fatSmaller *= i;
 				}
 
-				System.out.println("O menor número da coleção é " + smaller + " e o seu fatorial é: " + fatSmaller + ".");
+				System.out.println("O menor nÃºmero da coleÃ§Ã£o Ã© " + smaller + " e o seu fatorial Ã©: " + fatSmaller + ".");
 
 				break;
 
-			case 6: // Determina o maior número do array e a sua posiçao no array
+			case 6: // Determina o maior nÃºmero do array e a sua posiÃ§ao no array
 				int biggest = 0, posBiggest = 0;
 				for (int i = 0; i < range; i++) {
 					if (i == 0) {
@@ -147,7 +138,7 @@ public class exercícioA2 {
 					}
 				}
 				
-				System.out.println("O maior número do array é " + biggest + " e a sua posição no array é a: " + posBiggest + ".");
+				System.out.println("O maior nÃºmero do array Ã© " + biggest + " e a sua posiÃ§Ã£o no array Ã© a: " + posBiggest + ".");
 				break;
 			case 7:
 				int prime=0;
@@ -170,14 +161,14 @@ public class exercícioA2 {
 					}
 				}
 				
-				System.out.println("Existem " + prime + " números primos na colecao.");
+				System.out.println("Existem " + prime + " nÃºmeros primos na colecao.");
 				break;
 			case 9:
-				System.out.println("Programa encerrado pelo usuário.");
+				System.out.println("Programa encerrado pelo usuÃ¡rio.");
 				break;
 				
 				default:
-					System.out.println("Opção digitada invalida.");;
+					System.out.println("OpÃ§Ã£o digitada invalida.");
 			}
 
 		} while (option != 9);
