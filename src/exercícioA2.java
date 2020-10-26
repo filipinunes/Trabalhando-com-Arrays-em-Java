@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
-public class exercícioA2 {
 
+public class exercícioA2 {
 	public static void main(String[] args) {
 		/*
 		 * Escreva um programa que permita armazenar e manipular uma coleção de numeros
