@@ -140,22 +140,22 @@ public class exercícioA2 {
 				
 				System.out.println("O maior número do array é " + biggest + " e a sua posição no array é a: " + posBiggest + ".");
 				break;
-			case 7:
+			case 7: //Verifica quantos números primos o Array contém
 				int prime=0;
 				for(int i=0; i<range; i++) {
 					if (collection[i] == 2) {
 						prime+=1;
 					} else {
 						int aux = collection[i] - 1;
-						boolean primeBoolean = true;
+						boolean checkPrime = true;
 						while (aux >= 2) {
 							if ((collection[i] % aux) == 0) {
-								primeBoolean = false;
+								checkPrime = false;
 							}
 							aux -= 1;
 						}
 	
-						if (primeBoolean == true) {
+						if (checkPrime == true) {
 							prime += 1;
 						}
 					}
